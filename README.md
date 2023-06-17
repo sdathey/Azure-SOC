@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, applied some security controls to harden the environment, measured metrics for another 24 hours, the results shown below. The metrics shown are:
+In this project, I build a mini honeynet (Fictional Company called Rayda Estate) in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, applied some security controls to harden the environment, measured metrics for another 24 hours, the results shown below. The metrics shown are:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
@@ -50,6 +50,20 @@ Stop Time  6/13/2023 8:44:39 AM
 | SecurityAlert            | 0 
 | SecurityIncident         | 330
 | AzureNetworkAnalytics_CL | 1478
+
+The number of alerts were staggering!!! Over 150000 alerts were created in 24 hours. I believe the naming (Rayda Estate) made attackers thought it was a real domain.
+
+## Tools And Technologies Used To Harden The environments
+- Microsoft Cloud security Benchmark
+-  Microsoft Defender For Cloud
+- NIST SP 800-53 R4
+- Azure CIS 1.4.0
+- PCI DSS 4
+- Network Security Group (NSG)
+- Virtual Network (VNet)
+- Private Endpoint (PE)
+- Firewalls
+- ACLs
 
 ## Attack Maps Before Hardening And Implementing Security Controls
 
