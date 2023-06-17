@@ -3,19 +3,13 @@
 
 ## Introduction
 
-This project is a honeynet in Azure made by a fictional company called Rayda Estate to entice attackers on the Internet. I will ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, applied some security controls to harden the environment, measured metrics for another 24 hours, the results shown below. The metrics shown are:
+In this project, Rayda Estate, a fictional company, has deployed an Azure-based honeynet to attract Internet attackers. Log sources from various resources are collected in a Log Analytics workspace, enabling Microsoft Sentinel to generate attack maps, alerts, and incidents. Initial security metrics were measured over a 24-hour period in the insecure environment. Subsequently, security controls were implemented to fortify the environment, and metrics were measured for an additional 24 hours. The following metrics are used:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
 - SecurityAlert (Log Analytics Alerts Triggered)
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
-
-## Architecture Before Hardening And Implementing Of Security Controls
-![Architecture Diagram](https://i.imgur.com/1yJ0IJU.jpg)
-
-## Architecture After Hardening And Implementing Of Security Controls
-![Architecture Diagram](https://i.imgur.com/c0cSnfw.jpg)
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
@@ -27,9 +21,16 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Storage Account
 - Microsoft Sentinel
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet (No Private Endpoints).
+## Architecture Before Hardening And Implementing Of Security Controls
+![Architecture Diagram](https://i.imgur.com/1yJ0IJU.jpg)
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoints.
+Before implementing any security controls, all resources in the honeynet were initially deployed and exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls set to allow all traffic, and other resources were deployed with public IP Addresses visible to the Internet, without any private endpoints.
+
+## Architecture After Hardening And Implementing Of Security Controls
+![Architecture Diagram](https://i.imgur.com/c0cSnfw.jpg)
+
+After implementing security controls, notable changes were made to the network infrastructure. The Network Security Groups were strengthened by blocking ALL traffic, except for communication originating from my admin workstation. Additionally, all other resources were safeguarded by their built-in firewalls and secured through the utilization of Private Endpoints, ensuring a more robust and restricted access environment.
+
 
 ## Attack Maps Before Hardening And Implementing Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/OKmlgcm.jpg)<br>
@@ -95,6 +96,6 @@ Stop Time	 6/16/2023, 8:57:44 AM
 
 ## Conclusion
 
-In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
+The implementation of security controls in the honeynet project on Microsoft Azure resulted in a significant reduction in security events and incidents. This indicates the effectiveness of the applied security measures. It is important to mention that if the network resources were heavily utilized by regular users, there might have been a higher number of security events and alerts during the 24-hour period following the implementation of the security controls.
 
-It is also worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
+Overall, the project highlights the importance of implementing robust security measures to enhance the security posture of network environments and to reduce its attack surface.
