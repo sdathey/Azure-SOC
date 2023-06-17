@@ -3,13 +3,7 @@
 
 ## Introduction
 
-In this project, Rayda Estate, a fictional company, has deployed an Azure-based honeynet to attract Internet attackers. Log sources from various resources are collected in a Log Analytics workspace, enabling Microsoft Sentinel to generate attack maps, alerts, and incidents. Initial security metrics were measured over a 24-hour period in the insecure environment. Subsequently, security controls were implemented to fortify the environment, and metrics were measured for an additional 24 hours. The following metrics are used:
-
-- SecurityEvent (Windows Event Logs)
-- Syslog (Linux Event Logs)
-- SecurityAlert (Log Analytics Alerts Triggered)
-- SecurityIncident (Incidents created by Sentinel)
-- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+In this project, Rayda Estate, a fictional company, has deployed an Azure-based honeynet to attract Internet attackers. Log sources from various resources are collected in a Log Analytics workspace, enabling Microsoft Sentinel to generate attack maps, alerts, and incidents. Initial security metrics were measured over a 24-hour period in the insecure environment. Subsequently, security controls were implemented to fortify the environment, and metrics were measured for an additional 24 hours. 
 
 The architecture of the honeynet in Azure consists of the following components:
 
@@ -33,6 +27,14 @@ After implementing security controls, notable changes were made to the network i
 
 
 ## Attack Maps Before Hardening And Implementing Security Controls
+The following metrics are used to query for the maps:
+
+- Syslog (Linux Event Logs)
+- SecurityEvent (Windows Event Logs)
+- SecurityAlert (Log Analytics Alerts Triggered)
+- SecurityIncident (Incidents created by Sentinel)
+- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/OKmlgcm.jpg)<br>
 ![Linux Syslog Auth Failures](https://i.imgur.com/Ywmqqwd.jpg)<br>
 ![Windows RDP/SMB Auth Failures](https://i.imgur.com/h9r5oGY.jpg)<br>
