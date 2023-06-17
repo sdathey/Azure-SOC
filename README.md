@@ -11,7 +11,7 @@ In this project, Rayda Estate, a fictional company, has deployed an Azure-based 
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
-The architecture of the mini honeynet in Azure consists of the following components:
+The architecture of the honeynet in Azure consists of the following components:
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
