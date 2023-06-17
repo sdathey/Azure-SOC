@@ -1,9 +1,9 @@
-# Building a SOC + Honeynet in Azure (Live Traffic)
+# Azure - SOC - Honeynet - Project (Live Traffic)
 ![Cloud Honeynet / SOC](https://i.imgur.com/VGcjyU7.jpg)
 
 ## Introduction
 
-In this project, I build a mini honeynet (Fictional Company called Rayda Estate) in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, applied some security controls to harden the environment, measured metrics for another 24 hours, the results shown below. The metrics shown are:
+This project is a honeynet in Azure made with a Fictional Company called Rayda Estate to entice attackers on the Internet. I will ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, applied some security controls to harden the environment, measured metrics for another 24 hours, the results shown below. The metrics shown are:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
