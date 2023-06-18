@@ -7,13 +7,17 @@ In this project, Rayda Estate, a fictional company, has deployed an Azure-based 
 
 The architecture of the honeynet in Azure consists of the following components:
 
+- Azure Key Vault
+- Microsoft Sentinel
+- Azure Storage Account
 - Virtual Network (VNet)
+- Log Analytics Workspace
 - Network Security Group (NSG)
 - Virtual Machines (2 windows, 1 linux)
-- Log Analytics Workspace
-- Azure Key Vault
-- Azure Storage Account
-- Microsoft Sentinel
+
+
+
+
 
 ## Architecture Before Hardening And Implementing Of Security Controls
 ![Architecture Diagram](https://i.imgur.com/1yJ0IJU.jpg)
