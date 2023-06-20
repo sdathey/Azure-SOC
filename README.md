@@ -92,6 +92,7 @@ Stop Time	 6/16/2023, 8:57:44 AM
 | AzureNetworkAnalytics_CL | 0
 
 ## Results Of The Change In The Reduction Of The Attack Surface
+Rate of Change after the environment was secured
 
 | Metric                        | Change After Security Controls Application
 |-------------------------------| ------------------------------------------
