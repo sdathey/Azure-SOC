@@ -13,7 +13,7 @@ The architecture of the honeynet in Azure consists of the following components:
 - Virtual Network (VNet)
 - Log Analytics Workspace
 - Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
+- Virtual Machines (2 Windows, 1 Linux)
 
 
 
@@ -58,12 +58,13 @@ Stop Time  6/13/2023 8:44:39 AM
 | SecurityIncident         | 330
 | AzureNetworkAnalytics_CL | 1478
 
-The number of alerts were staggering!!! Over 150000 alerts were created in 24 hours. I believe the naming (Rayda Estate) made attackers thought it was a real domain.
+The number of alerts was staggering!!! Over 150000 alerts were created in 24 hours. I believe the naming (Rayda Estate) made attackers think it was a real domain.
 
 ## Tools And Technologies Used To Harden The environments
-- Microsoft Cloud security Benchmark
--  Microsoft Defender For Cloud
+- Microsoft Cloud Security Benchmark
+- Microsoft Defender For Cloud
 - NIST SP 800-53 R4
+- NIST SP 800-61 R2
 - Azure CIS 1.4.0
 - PCI DSS 4
 - Network Security Group (NSG)
