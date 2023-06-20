@@ -1,4 +1,4 @@
-# Azure - SOC - Honeynet - Project (Live Traffic)
+# Azure - SOC - Honeynet - Project (Real Time Cyber Attacks)
 ![Cloud Honeynet / SOC](https://i.imgur.com/VGcjyU7.jpg)
 
 ## Introduction
@@ -22,7 +22,7 @@ The architecture of the honeynet in Azure consists of the following components:
 ## Architecture Before Hardening And Implementing Of Security Controls
 ![Architecture Diagram](https://i.imgur.com/1yJ0IJU.jpg)
 
-Before implementing any security controls, all resources in the honeynet were initially deployed and exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls set to allow all traffic, and other resources were deployed with public IP Addresses visible to the Internet, without any private endpoints.
+Before implementing any security controls, all resources in the honeynet were initially deployed and exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls set to allow all traffic. Other resources were deployed with public IP Addresses visible to the Internet, without any private endpoints.
 
 ## Architecture After Hardening And Implementing Of Security Controls
 ![Architecture Diagram](https://i.imgur.com/c0cSnfw.jpg)
