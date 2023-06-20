@@ -22,7 +22,7 @@ The architecture of the honeynet in Azure consists of the following components:
 ## Architecture Before Hardening And Implementing Of Security Controls
 ![Architecture Diagram](https://i.imgur.com/1yJ0IJU.jpg)
 
-Before implementing any security controls, all resources in the honeynet were initially deployed and exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls set to allow all traffic. Other resources were deployed with public IP Addresses visible to the Internet, without any private endpoints.
+Before implementing any security controls, all resources in the honeynet were initially deployed and exposed to the Internet. The Virtual Machines had both their Network Security Groups and built-in firewalls set to allow all traffic. Other resources were deployed with public IP Addresses visible to the Internet, without any private endpoints.
 
 ## Architecture After Hardening And Implementing Of Security Controls
 ![Architecture Diagram](https://i.imgur.com/c0cSnfw.jpg)
@@ -73,13 +73,13 @@ The number of alerts was staggering!!! Over 150000 alerts were created in 24 hou
 - Firewalls
 - ACLs
 
-## Attack Maps Before Hardening And Implementing Security Controls
+## Attack Maps After Hardening And Implementing Security Controls
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+```All map queries returned no results due to no instances of malicious activity for the 24 hours after hardening.```
 
 ## Metrics After Hardening And Implementing Security Controls
 
-The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
+The following table shows the metrics we measured in our environment for another 24 hours, but after we applied security controls:
 Start Time 6/15/2023, 8:57:44 AM
 Stop Time	 6/16/2023, 8:57:44 AM
 
@@ -103,6 +103,6 @@ Stop Time	 6/16/2023, 8:57:44 AM
 
 ## Conclusion
 
-The implementation of security controls in the honeynet project on Microsoft Azure resulted in a significant reduction in security events and incidents. This indicates the effectiveness of the applied security measures. It is important to mention that if the network resources were heavily utilized by regular users, there might have been a higher number of security events and alerts during the 24-hour period following the implementation of the security controls.
+The Implementation of security controls in the Honeynet project in Microsoft Azure resulted in a significant reduction in security events and incidents. This indicates the effectiveness of the applied security measures. It is important to mention that if the network resources were heavily utilized by regular users, there might have been a higher number of security events and alerts during the 24 hours following the implementation of the security controls.
 
 Overall, the project highlights the importance of implementing robust security measures to enhance the security posture of network environments and to reduce its attack surface.
