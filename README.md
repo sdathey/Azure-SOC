@@ -39,10 +39,10 @@ The following metrics were used to query for the maps:
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/OKmlgcm.jpg)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/Ywmqqwd.jpg)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/h9r5oGY.jpg)<br>
-![MSSQL Auth Failures](https://i.imgur.com/JimzOeB.jpg)
+![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/0654REU.jpg)<br>
+![Linux Syslog Auth Failures](https://i.imgur.com/1qidkTm.jpg)<br>
+![Windows RDP/SMB Auth Failures](https://i.imgur.com/GNDKcAy.jpg)<br>
+![MSSQL Auth Failures](https://i.imgur.com/w56RB4X.jpg)
 
 ## Metrics Before Hardening And Implementing Security Controls
 
