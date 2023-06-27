@@ -31,7 +31,7 @@ After implementing security controls, notable changes were made to the network i
 
 
 ## Attack Maps Before Hardening And Implementing Security Controls
-The following metrics were used to query for the maps:
+The following metrics were used to query for these maps:
 
 - Syslog (Linux Event Logs)
 - SecurityEvent (Windows Event Logs)
