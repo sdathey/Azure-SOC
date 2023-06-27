@@ -31,7 +31,7 @@ After implementing security controls, notable changes were made to the network i
 
 
 ## Attack Maps Before Hardening And Implementing Security Controls
-The following metrics were used to query for these maps:
+The following metrics were used to query these maps:
 
 - Syslog (Linux Event Logs)
 - SecurityEvent (Windows Event Logs)
@@ -104,6 +104,6 @@ Rate of Change after the environment was secured
 
 ## Conclusion
 
-The Implementation of security controls in the Honeynet project in Microsoft Azure resulted in a significant reduction in security events and incidents. This indicates the effectiveness of the applied security measures. It is important to mention that if the network resources were heavily utilized by regular users, there might have been a higher number of security events and alerts during the 24 hours following the implementation of the security controls.
+The Implementation of security controls in this Honeynet project in Microsoft Azure resulted in a significant reduction in security events and incidents. This indicates the effectiveness of the applied security measures. It is important to mention that if the network resources were heavily utilized by regular users, there might have been a higher number of security events and alerts during the 24 hours following the implementation of the security controls.
 
-Overall, the project highlights the importance of implementing robust security measures to enhance the security posture of network environments and to reduce its attack surface.
+Overall, this project highlights the importance of implementing robust security measures to enhance the security posture of network environments and to reduce their attack surface.
