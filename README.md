@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this project, Rayda Estate, a fictional company, has deployed an Azure-based honeynet to attract Internet attackers. Log sources from various resources are collected in a Log Analytics workspace, enabling Microsoft Sentinel to generate attack maps, alerts, and incidents. Initial security metrics were measured over a 24-hour period in the insecure environment. Subsequently, security controls were implemented to fortify the environment, and metrics were measured for an additional 24 hours. 
+In this project, Rayda Estate, a fictional company, has deployed an Azure-based honeynet open to the Internet to attract  hackers. Log sources from various resources are collected in a Log Analytics workspace, enabling Microsoft Sentinel to generate attack maps, alerts, and incidents. Initial security metrics were measured over 24 hours in the insecure environment. Subsequently, security controls were implemented to fortify the environment, and metrics were measured for another 24 hours. 
 
 The architecture of the honeynet in Azure consists of the following components:
 
@@ -27,7 +27,7 @@ Before implementing any security controls, all resources in the honeynet were in
 ## Architecture After Hardening And Implementing Of Security Controls
 ![Architecture Diagram](https://i.imgur.com/c0cSnfw.jpg)
 
-After implementing security controls, notable changes were made to the network infrastructure. The Network Security Groups were strengthened by blocking ALL traffic, except for communication originating from my admin workstation. Additionally, all other resources were safeguarded by their built-in firewalls and secured through the utilization of Private Endpoints, ensuring a more robust and restricted access environment.
+After implementing security controls, notable changes were made to the network infrastructure. The Network Security Groups were strengthened by blocking ALL traffic, except for communication originating from my admin workstation. Additionally, all other resources were safeguarded by their built-in firewalls and secured by using Private Endpoints, ensuring a more robust and restricted access environment.
 
 
 ## Attack Maps Before Hardening And Implementing Security Controls
@@ -58,7 +58,7 @@ Stop Time  6/13/2023 8:44:39 AM
 | SecurityIncident         | 330
 | AzureNetworkAnalytics_CL | 1478
 
-The number of alerts was staggering!!! Over 150000 alerts were created in 24 hours. I believe the naming (Rayda Estate) made attackers think it was a real domain.
+The number of alerts was staggering!!! Over 150000 were created in 24 hours. I believe the naming (Rayda Estate) made attackers think it was a real domain.
 
 ## Tools And Technologies Used To Harden The environments
 - Microsoft Cloud Security Benchmark
