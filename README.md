@@ -19,12 +19,12 @@ The architecture of the honeynet in Azure consists of the following components:
 
 
 
-## Architecture Before Hardening And Implementing Of Security Controls
+## Architecture Before Hardening And Implementing Security Controls
 ![Architecture Diagram](https://i.imgur.com/1yJ0IJU.jpg)
 
 Before implementing any security controls, all resources in the honeynet were initially deployed and exposed to the Internet. The Virtual Machines had both their Network Security Groups and built-in firewalls set to allow all traffic. Other resources were deployed with public IP Addresses visible to the Internet, without any private endpoints.
 
-## Architecture After Hardening And Implementing Of Security Controls
+## Architecture After Hardening And Implementing Security Controls
 ![Architecture Diagram](https://i.imgur.com/c0cSnfw.jpg)
 
 After implementing security controls, notable changes were made to the network infrastructure. The Network Security Groups were strengthened by blocking ALL traffic, except for communication originating from my admin workstation. Additionally, all other resources were safeguarded by their built-in firewalls and secured by using Private Endpoints, ensuring a more robust and restricted access environment.
