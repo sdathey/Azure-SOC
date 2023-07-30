@@ -27,7 +27,7 @@ Before implementing any security controls, all resources in the honeynet were in
 ## Architecture After Hardening And Implementing Security Controls
 ![Architecture Diagram](https://i.imgur.com/c0cSnfw.jpg)
 
-After implementing security controls, notable changes were made to the network infrastructure. The Network Security Groups were strengthened by blocking ALL traffic, except for communication originating from my admin workstation. Additionally, all other resources were safeguarded by their built-in firewalls and secured by using Private Endpoints, ensuring a more robust and restricted access environment.
+After implementing security controls, notable changes were made to the network infrastructure. The Network Security Groups were strengthened by blocking ALL traffic, except for communication originating from my admin workstation. Additionally, their built-in firewalls were used to safeguard all other resources and secured them by using Private Endpoints, ensuring a more robust and restricted access environment.
 
 
 ## Attack Maps Before Hardening And Implementing Security Controls
@@ -98,7 +98,7 @@ Rate of Change after the environment was secured
 |-------------------------------| ------------------------------------------
 | SecurityEvents                | 96.84%
 | Syslog                        | 97.74%
-| SecurityAlert                 | N/A
+| SecurityAlert                 | 100.00%
 | SecurityIncident              | 100.00%
 | AzureNetworkAnalytics_CL      | 100.00%
 
